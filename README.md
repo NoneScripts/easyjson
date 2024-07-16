@@ -83,3 +83,15 @@ deletejs.jsondelete('key6')
     "key5": 7
 }
 ```
+**Я думаю вы поняли принцип использования этой библиотеки, поэтому я расскажу про другие методы которые я ещё не показывал в использоваии**
+```python
+from easyjson import JsonMaster, JsonDC
+
+JS = JsonMaster('filejs.json')
+result = JS.jsonread() #читает json файлы
+JS.jsonadd_dict({"my_key1": 1, "my_key2": 2}) #Добавляет словарь к существующему
+
+FileJS = JsonDC('filejs.json')
+FileJS.jsondeletefile() #удаляет файл json
+```
+**Удачи!!!**
